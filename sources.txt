@@ -1,0 +1,1082 @@
+Times Now
+Twitter
+Null
+Hindustan Times
+Reuters
+The New Indian Express
+ANI
+Hindustan Times
+Twitter
+ANI
+ANI
+Free Press Journal
+The Guardian
+ANI
+Times Now
+ANI
+Twitter
+Null
+Inc42
+ANI
+The New Indian Express
+The Free Press Journal
+The Quint
+The New Indian Express
+The Guardian
+CricTracker
+The Quint
+ANI
+Daily Mail
+BloombergQuint
+Engadget
+TechCrunch
+ANI
+Twitter
+Null
+The Guardian
+Livemint
+ANI
+The Wire
+Null
+Hindustan Times
+Hindustan Times
+The Quint
+Daily Mail
+Reuters
+Reutersimport re
+file = open('screenplay.txt', 'r')
+# .lower() returns a version with all upper case characters replaced with lower case characters.
+text = file.read().lower()
+file.close()
+ANI
+ANI
+ANI
+The Siasat Daily
+Springboard
+Hindustan Times
+Pinkvilla
+Cricket Country
+Hindustan Times
+Null
+Null
+YourStory
+Times Now
+Null
+Hindustan Times
+Null
+India.com
+Livemint
+Null
+Daily Mail
+The Guardian
+Null
+The Quint
+ANI
+ANI
+Bloomberg Quint
+Null
+The New Indian Express
+The Quint
+The New Indian Express
+The Financial Express
+Cricket World Cup
+Twitter
+Null
+CricTracker
+Cricket Australia
+Cricket World Cup
+Null
+Null
+CricTracker
+Twitter
+Instagram
+TechCrunch
+The Guardian
+The New Indian Express
+The News Minute
+Times Now
+Reuters
+Daily Mail
+Twitter
+Hindustan Times
+Times Now
+Null
+Null
+The Financial Express
+Hindustan Times
+The Quint
+Reuters
+Null
+Hindustan Times
+Hindustan Times
+BCCI
+Hindustan Times
+The Guardian
+TechCrunch
+Hindustan Times
+Daily Mail
+Hindustan Times
+Twitter
+Bloomberg Quint
+CricTracker
+Hindustan Times
+Null
+India.com
+The New Indian Express
+India.com
+Null
+ANI
+Times Now
+Null
+BloombergQuint
+Livemint
+Livemint
+Reuters
+The News Minute
+CricTracker
+ANI
+Null
+Hindustan Times
+Livemint
+YourStory
+The Guardian
+The Financial Express
+Times Now
+Hindustan Times
+Deutsche Welle
+Livemint
+Hindustan Times
+TechCrunch
+India.com
+ANI
+ANI
+The Financial Express
+ANI
+Livemint
+ANI
+Hindustan Times
+ANI
+Reuters
+Daily Mail
+Livemint
+Reebok
+Livemint
+Times Now
+Hindustan Times
+Hindustan Times
+Times Now
+Engadget
+Hindustan Times
+ANI
+ANI
+Livemint
+Livemint
+The Quint
+The Quint
+Null
+Null
+Livemint
+ANI
+The Guardian
+Hindustan Times
+The Guardian
+The Financial Express
+Hindustan Times
+India.com
+The New Indian Express
+The New Indian Express
+ANI
+upGrad
+Twitter
+Hindustan Times
+Great Learning
+Pinkvilla
+Times Now
+Hindustan Times
+Pinkvilla
+CricTracker
+Null
+Hindustan Times
+Hindustan Times
+Phys.org
+Hindustan Times
+Hindustan Times
+Null
+Hindustan Times
+Hindustan Times
+Inc42
+Hindustan Times
+Hindustan Times
+Hindustan Times
+Hindustan Times
+Hindustan Times
+Null
+Livemint
+Times Now
+CricTracker
+Null
+Twitter
+Twitter
+Cricket Country
+Hindustan Times
+Cricket Country
+Twitter
+Null
+Daily Mail
+The Financial Express
+ANI
+The New Indian Express
+The New Indian Express
+The Quint
+The Quint
+Hindustan Times
+CricTracker
+Hindustan Times
+Null
+Times Now
+Null
+Hindustan Times
+Hindustan Times
+Livemint
+Livemint
+Null
+Hindustan Times
+Pinkvilla
+The News Minute
+SpotboyE
+Pinkvilla
+Null
+CricTracker
+Twitter
+The News Minute
+Null
+Times Now
+ANI
+Times Now
+The Wire
+Times Now
+Times Now
+India.com
+The Financial Express
+TechCrunch
+Free Press Journal
+The Financial Express
+The New Indian Express
+The Quint
+Free Press Journal
+The Financial Express
+Pinkvilla
+Hindustan Times
+Cricket World Cup
+CricTracker
+Null
+India.com
+The Financial Express
+The Financial Express
+Null
+Hindustan Times
+Hindustan Times
+Livemint
+Reuters
+Livemint
+Times Now
+Cricket Country
+Times Now
+Times Now
+Livemint
+India.com
+ANI
+The Financial Express
+The Quint
+ANI
+Null
+The Financial Express
+Livemint
+Twitter
+Instagram
+The Quint
+Times Now
+Times Now
+Hindustan Times
+Null
+BGR India
+Twitter
+Inc42
+Hindustan Times
+Reuters
+RT
+Null
+Null
+Engagdet
+ANI
+The New Indian Express
+YourStory
+Times Now
+Hindustan Times
+ANI
+Null
+India.com
+The New Indian Express
+Cricket World Cup
+Cricket World Cup
+Cricket World Cup
+Cricket World Cup
+ATP
+Hindustan Times
+Hindustan Times
+Hindustan Times
+Times Now
+Inshorts
+Daily Mail
+Null
+TechCrunch
+Null
+Reuters
+Reuters
+Times Now
+ANI
+India.com
+India.com
+The New Indian Express
+The New Indian Express
+Reuters
+Reuters
+The Financial Express
+Reuters
+Inshorts
+Twitter
+Cricket World Cup
+CricTracker
+Hindustan Times
+Hindustan Times
+ANI
+Hindustan Times
+ANI
+Times Now
+The News Minute
+ANI
+Null
+Hindustan Times
+Null
+Daily Mail
+The Guardian
+Olympic Channel
+India.com
+The Quint
+Hindustan Times
+Null
+ANI
+Null
+Times Now
+Null
+Null
+Times Now
+Hindustan Times
+Instagram
+Twitter
+ANI
+Hindustan Times
+Hindustan Times
+Null
+Reuters
+RT
+BloombergQuint
+BloombergQuint
+Times Now
+Hindustan Times
+India.com
+Livemint
+Delhi Planet
+YourStory
+Times Now
+The Financial Express
+The New Indian Express
+India.com
+The New Indian Express
+The New Indian Express
+Livemint
+JetPrivilege
+Hindustan Times
+Pinkvilla
+ANI
+Hindustan Times
+Cricket World Cup
+Cricket World Cup
+Cricket World Cup
+Facebook
+Hindustan Times
+The New Indian Express
+Livemint
+India.com
+RT
+Hindustan Times
+Hindustan Times
+Null
+Hindustan Times
+Times Now
+The News Minute
+Times Now
+Times Now
+PTI
+Reuters
+Livemint
+The Financial Express
+Facebook
+Twitter
+Cricket World Cup
+Hindustan Times
+India.com
+Engadget
+Reuters
+Reuters
+Reuters
+Reuters
+The Financial Express
+Reuters
+The Quint
+TechCrunch
+The Siasat Daily
+The New Indian Express
+The Financial Express
+Inc42
+ANI
+ANI
+Hindustan Times
+Hindustan Times
+Null
+India.com
+Hindustan Times
+India.com
+CricTracker
+Null
+Null
+Null
+Null
+CricTracker
+Hindustan Times
+Times Now
+Null
+Instagram
+Engadget
+Hindustan Times
+Hindustan Times
+ANI
+Hindustan Times
+Reuters
+Hindustan Times
+Twitter
+Hindustan Times
+Null
+Times Now
+The Financial Express
+Times Now
+Null
+Wimbledon
+Hindustan Times
+CricTracker
+Null
+The Guardian
+Twitter
+Null
+The Guardian
+The Financial Express
+The Guardian
+Bloomberg Quint
+Reuters
+Hindustan Times
+Hindustan Times
+Times Now
+Null
+RT
+Null
+Times Now
+Hindustan Times
+TechCrunch
+Engadget
+NASA
+ANI
+The Guardian
+Reuters
+Hindustan Times
+YourStory
+The Guardian
+ANI
+Null
+Null
+Hindustan Times
+Hindustan Times
+The Quint
+Null
+Hindustan Times
+Null
+The Guardian
+Vogue India
+Null
+Livemint
+The Guardian
+Null
+Null
+Null
+Hindustan Times
+ANI
+Livemint
+ANI
+ANI
+ANI
+The Guardian
+Great Learning
+Hindustan Times
+The Quint
+Koimoi
+Hindustan Times
+CricTracker
+ANI
+Times Now
+Hindustan Times
+Twitter
+ANI
+Hindustan Times
+The New Indian Express
+ANI
+India.com
+ANI
+The New Indian Express
+The Guardian
+Daily Mail
+NewsBytes
+Null
+Null
+Hindustan Times
+ANI
+The New Indian Express
+The New Indian Express
+ANI
+The Financial Express
+ATP Tour
+Twitter
+Times Now
+Hindustan Times
+CricTracker
+Instagram
+Null
+Barcelona
+The Quint
+CricTracker
+YourStory
+TechCrunch
+ANI
+ANI
+Hindustan Times
+Livemint
+Engadget
+Daily Mail
+Hindustan Times
+Times Now
+The Guardian
+The New Indian Express
+The New Indian Express
+India.com
+Null
+Reuters
+Hindustan Times
+CricTracker
+Cricket World Cup
+ATP
+Hindustan Times
+Hindustan Times
+Null
+ANI
+Reuters
+Livemint
+The Guardian
+Bloomberg Quint
+Reuters
+India.com
+ANI
+The Quint
+Null
+Times Now
+ANI
+ANI
+YourStory
+Times Now
+ANI
+ANI
+Hindustan Times
+ANI
+RT
+CricTracker
+The Guardian
+CricTracker
+CricTracker
+The Guardian
+Times Now
+Null
+Hindustan Times
+Entrackr
+Bloomberg Quint
+The News Minute
+Hindustan Times
+Livemint
+Reuters
+The New Indian Express
+The Guardian
+Reuters
+The Financial Express
+Null
+Null
+CricTracker
+Null
+Null
+Null
+Hindustan Times
+Livemint
+ANI
+ANI
+ANI
+SpotboyE
+Hindustan Times
+Cricket Australia
+Hindustan Times
+ANI
+Null
+The New Indian Express
+Twitter
+ANI
+Livemint
+The Quint
+Null
+Reuters
+Livemint
+Times Now
+Null
+Reuters
+Hindustan Times
+ANI
+ANI
+Inc42
+ANI
+Hindustan Times
+ANI
+Twitter
+Null
+Hindustan Times
+Null
+Hotstar
+WTA
+Null
+WTA
+TechCrunch
+Null
+Hindustan Times
+Free Press Journal
+Engadget
+Times Now
+ANI
+Hindustan Times
+Livemint
+Reuters
+Null
+Livemint
+India.com
+ANI
+Entrackr
+Null
+India.com
+Cricket World Cup
+Hindustan Times
+Twitter
+Null
+Cricket Country
+Cricket World Cup
+CricTracker
+Null
+The Quint
+The Financial Express
+The New Indian Express
+Reuters
+ANI
+Livemint
+Livemint
+Hindustan Times
+Times Now
+Null
+Hindustan Times
+Reuters
+Hindustan Times
+The Financial Express
+The New Indian Express
+Daily Mail
+The Guardian
+The Financial Express
+The Financial Express
+CricTracker
+Null
+Cricket World Cup
+Null
+Cricket World Cup
+CricTracker
+ThePrint
+ANI
+Hindustan Times
+Null
+The New Indian Express
+Livemint
+TechCrunch
+Inc42
+Null
+Null
+Null
+Livemint
+Null
+Entrackr
+Entrackr
+India.com
+The Guardian
+Reuters
+Livemint
+Livemint
+ANI
+Pinkvilla
+Hindustan Times
+Cricket World Cup
+Null
+Engadget
+TechCrunch
+Null
+Null
+Null
+The New Indian Express
+ANI
+The Guardian
+VCCircle
+Daily Mail
+The Financial Express
+India.com
+ANI
+Engadget
+The Quint
+Hindustan Times
+Times Now
+Hindustan Times
+ANI
+Twitter
+Livemint
+Twitter
+Hindustan Times
+Runwal Group
+The Quint
+Bollywood Hungama
+The Quint
+Times Now
+Cricket World Cup
+ICC
+ANI
+The Quint
+Times Now
+Inc42
+Hindustan Times
+Null
+The Quint
+ANI
+Hindustan Times
+Hindustan Times
+Reuters
+The Next Web
+TechCrunch
+Livemint
+YourStory
+Inc42
+ANI
+gadgets.ndtv.com
+PTI
+Null
+Times Now
+Times Now
+Twitter
+ATP
+Livemint
+Cricket World Cup
+Twitter
+ATP
+ANI
+India.com
+Entrackr
+Times Now
+The New Indian Express
+The New Indian Express
+Twitter
+Null
+ATP
+Twitter
+Hindustan Times
+Hindustan Times
+Hindustan Times
+Entrackr
+BloombergQuint
+Null
+Times Now
+Times Now
+Daily Mail
+CricTracker
+Twitter
+Cricket World Cup
+Twitter
+Null
+ANI
+Null
+Inshorts
+Null
+Hindustan Times
+Hindustan Times
+The Guardian
+Livemint
+Livemint
+Reuters
+Null
+Null
+RT
+The News Minute
+YourStory
+PTI
+Reuters
+BloombergQuint
+Cricket World Cup
+Cricket World Cup
+Hindustan Times
+The Quint
+Pinkvilla
+Twitter
+RT
+Livemint
+TechCrunch
+Null
+India.com
+ANI
+Free Press Journal
+Times Now
+ANI
+Times Now
+Null
+Null
+ANI
+ANI
+ANI
+Reuters
+ANI
+NASA
+Livemint
+Reuters
+Livemint
+Pinkvilla
+Hindustan Times
+Times Now
+Cricket World Cup
+Cricket World Cup
+Twitter
+ANI
+India.com
+Null
+Null
+Hindustan Times
+Hindustan Times
+Hindustan Times
+RT
+The Guardian
+Reuters
+Hindustan Times
+Times Now
+ANI
+Times Now
+ANI
+Entrackr
+YourStory
+India.com
+Hindustan Times
+The New Indian Express
+RT
+Twitter
+ANI
+Hindustan Times
+Hindustan Times
+Twitter
+Instagram
+Null
+ANI
+ANI
+Null
+ANI
+ANI
+The New Indian Express
+ANI
+Null
+ANI
+The New Indian Express
+The New Indian Express
+CricTracker
+DelhiPlanet
+ANI
+ANI
+Hindustan Times
+Inc42
+YourStory
+ANI
+ANI
+ANI
+The Quint
+CricTracker
+CricTracker
+WTA
+Cricket Country
+TechCrunch
+The Quint
+ANI
+The Quint
+The Quint
+Null
+India.com
+ANI
+Null
+The Guardian
+Bloomberg Quint
+The Quint
+Cricket World Cup
+Reuters
+ANI
+India.com
+Times Now
+YourStory
+ThePrint
+Livemint
+Daily Mail
+Cricket World Cup
+Null
+Instagram
+Cricket World Cup
+Null
+Livemint
+Daily Mail
+Hindustan Times
+Hindustan Times
+Null
+Hindustan Times
+India.com
+ANI
+Reuters
+The Print
+The Print
+Times Now
+Null
+Hindustan Times
+Hindustan Times
+Wimbledon
+The New Indian Express
+Reuters
+YourStory
+ANI
+Livemint
+Hindustan Times
+CricTracker
+Hindustan Times
+Twitter
+Reuters
+Reuters
+Hindustan Times
+Null
+Null
+The Quint
+ANI
+Hindustan Times
+Livemint
+ANI
+Times Now
+ANI
+Null
+YourStory
+YourStory
+TechCrunch
+India.com
+The New Indian Express
+India.com
+Null
+Reuters
+Livemint
+Reuters
+Koimoi
+Hindustan Times
+Instagram
+Cricket World Cup
+CricTracker
+Hindustan Times
+Null
+Hindustan Times
+Entrackr
+TechCrunch
+Hindustan Times
+The News Minute
+The Guardian
+Twitter
+RT
+Null
+Null
+CricTracker
+Entrackr
+Reuters
+The Quint
+Null
+Times Now
+India.com
+Livemint
+Hindustan Times
+Hindustan Times
+Cricket World Cup
+Reuters
+Hindustan Times
+Null
+Livemint
+Null
+The New Indian Express
+Free Press Journal
+Null
+Facebook
+ANI
+Null
+ANI
+The New Indian Express
+Reuters
+Livemint
+Hindustan Times
+Null
+Engadget
+Engadget
+India.com
+Hindustan Times
+Livemint
+ANI
+Times Now
+Reebok
+Cricket World Cup
+ANI
+Bollywood Hungama
+Null
+Cricket World Cup
+Cricket World Cup
+Hindustan Times
+ANI
+The New Indian Express
+Hindustan Times
+Free Press Journal
+YourStory
+ANI
+The Quint
+ANI
+Hindustan Times
+The Siasat Daily
+The New Indian Express
+ANI
+The New Indian Express
+ANI
+Hindustan Times
+PTI
+Hindustan Times
+{'times now': 64, 'twitter': 39, 'null': 142, 'hindustan times': 158, 'reuters': 50, 'the new indian express': 46, 'ani': 122, 'free press journal': 7, 'the guardian': 31, 'inc42': 9, 'the free press journal': 1, 'the quint': 35, 'crictracker': 32, 'daily mail': 16, 'bloombergquint': 6, 'engadget': 11, 'techcrunch': 17, 'livemint': 56, 'the wire': 2,  'the siasat daily': 3, 'springboard': 1, 'pinkvilla': 10, 'cricket country': 6, 'yourstory': 16, 'india.com': 36, 'bloomberg quint': 6, 'the financial express': 27, 'cricket world cup': 33, 'cricket australia': 2, 'instagram': 8, 'the news minute': 9, 'bcci': 1, 'deutsche welle': 1, 'reebok': 2, 'upgrad': 1, 'great learning': 2, 'phys.org': 1, 'spotboye': 2, 'bgr india': 1, 'rt': 10, 'engagdet': 1, 'atp': 5, 'inshorts': 3, 'olympic channel': 1, 'delhi planet': 1, 'jetprivilege': 1, 'facebook': 3, 'pti': 4, 'wimbledon': 2, 'nasa': 2, 'vogue india': 1, 'koimoi': 2, 'newsbytes': 1, 'atp tour': 1, 'barcelona': 1, 'entrackr': 9, 'hotstar': 1, 'wta': 3, 'theprint': 2, 'vccircle': 1, 'runwal group': 1, 'bollywood hungama': 2, 'icc': 1, 'the next web': 1, 'gadgets.ndtv.com': 1, 'delhiplanet': 1, 'the print': 2}

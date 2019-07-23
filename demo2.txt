@@ -1,0 +1,58 @@
+0
+Times Now
+Daily Mail
+Twitter
+TechCrunch
+Neuralink, the Elon Musk-led startup that the multi-entrepreneur founded in 2017, is working on technology that’s based around ‘threads’ which it says can be implanted in human brains with much less potential impact to the surrounding brain tissue vs. what’s currently used for today’s brain-computer interfaces. “Most people don’t realize, we can solve that with a chip,” Musk said to kick off Neuralink’s event, talking about some of the brain disorders and issues the company hopes to solve.
+Musk also said that long-term Neuralink really is about figuring out a way to “achieve a sort of symbiosis with artificial intelligence.” “This is not a mandatory thing,” he added. “This is something you can choose to have if you want.”
+For now, however, the aim is medical and the plan is to use a robot that Neuralink has created that operates somewhat like a “sewing machine” to implant this threads, which are incredibly thin I(like, between 4 and 6 μm, which means about one-third the diameter of the thinnest human hair), deep within a person’s brain tissue, where it will be capable of performing both read and write operations at very high data volume.
+All of this sounds incredibly far-fetched, and to some extent it still is: Neuralink’s scientists told The New York Times in a briefing on Monday that the company has a “long way to go” before it can get anywhere near offering a commercial service. The main reason for breaking cover and talking more freely about what they’re working on, the paper reported, is that they’ll be better able to work out in the open and publish papers, which is definitely an easier mode of operation for something that requires as much connection with the academic and research community as this.
+Neuralink co-founder and president Max Hodak told the NYT that he’s optimistic Neuralink’s tech could theoretically see use somewhat soon in medical use, including potential applications enabling amputees to regain mobility via use of prosthetics and reversing vision, hearing or other sensory deficiencies. It’s hoping to actually begin working with human test subjects as early as next year, in fact, including via possible collaboration with neurosurgeons at Stanford and other institutions.
+The current incarnation of Neuralink’s tech would involve drilling actual holes into a subject’s skull in order to insert the ultra thin threads, but future iterations will shift to using lasers instead to create tiny holes that are much less invasive and essentially not felt by a patient, Hodak told the paper. Working on humans next year with something that meets this description for a relatively new company might seem improbable, but Neuralink did demonstrate its technology used on a laboratory rat this week, with performance levels that exceed today’s systems in terms of data transfer. The data from the rat was gathered via a USB-C port in its head, and it provided about 10x more what the best current sensors can offer, according to Bloomberg.
+Neurlalink’s advances vs. current BCI methods also include the combined thinness and flexibility of the ‘threads’ used, but one scientist wondered about their longevity when exposed to the brain, which contains a salt mix fluid that can damage and ultimately degrade plastics over time. The plan is also that the times electrodes implanted in the brain will be able to communicate wirelessly with chips outside the brain, providing real time monitoring with unprecedented freedom of motion, without any external wires or connections.
+Elon Musk is bankrolling the majority of this endeavour as well as acting as its CEO, with $100 million of the $158 million its raised so far coming from the SpaceX and Tesla CEO. It has 90 employees thus far, and still seems to be hiring aggressively based on its minimal website (which basically only contains job ads). Elon Musk also noted at the outset of today’s presentation that the main reason for the event was in fact to recruit new talent.
+Hindustan Times
+Null
+Livemint
+The Guardian
+Hindustan Times
+Free Press Journal
+Twitter
+ANI
+The New Indian Express
+Hindustan Times
+Daily Mail
+The Guardian
+Reuters
+Twitter
+Null
+ANI
+Inc42
+The Quint
+The Free Press Journal
+The Guardian
+CricTracker
+The Quint
+ANI
+Pinkvilla
+Hindustan Times
+BloombergQuint
+Engadget
+ANI
+Null
+Twitter
+The Wire
+The Quint
+ANI
+Null
+Null
+Hindustan Times
+Reuters
+ANI
+ANI
+ANI
+ANI
+Bloomberg Quint
+Null
+ANI
+The Siasat Daily
