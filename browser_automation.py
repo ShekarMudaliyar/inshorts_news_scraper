@@ -40,7 +40,10 @@ def get_from_techCrunch(link,index,news_title,news_summary,source_name):
 
 def get_from_livemint(link,index,news_title,news_summary,source_name):
     driver_new.get(link)
-    driver_new.find_element_by_class_name('btn_disagree').click()
+    try:
+        driver_new.find_element_by_class_name('btn_disagree').click()
+    except:
+        print('hmm')
     text = driver_new.find_element_by_class_name('mainArea').find_elements_by_css_selector('p')
     l = []
     for i in range(len(text)):
@@ -69,7 +72,7 @@ def get_from_hindustantimes(link,index,news_title,news_summary,source_name):
     try:
         driver_new.find_element_by_class_name('btn_disagree').click()
     except:
-        print('hmm')    
+        print('hmm')
     text = driver_new.find_element_by_class_name('story-details').find_elements_by_css_selector('p')
     l = []
     for i in range(len(text)):
