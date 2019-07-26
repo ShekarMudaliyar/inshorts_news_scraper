@@ -26,441 +26,518 @@ def add_to_csv(index,news_title,news_summary,source_name,news_article,link):
         writer.writerow([index,news_title,news_summary,source_name,news_article,link])
 
 def get_from_techCrunch(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    # driver_new.find_element_by_class_name('exit-close').click()
-    text = driver_new.find_element_by_class_name('article-content').find_elements_by_css_selector('p')
-    l=[]
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
-
-
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
-def get_from_livemint(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
     try:
-        driver_new.find_element_by_class_name('btn_disagree').click()
+        driver_new.get(link)
+        # driver_new.find_element_by_class_name('exit-close').click()
+        text = driver_new.find_element_by_class_name('article-content').find_elements_by_css_selector('p')
+        l=[]
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
+
+
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
     except:
-        print('hmm')
-    text = driver_new.find_element_by_class_name('mainArea').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
+        print('umm')
+def get_from_livemint(link,index,news_title,news_summary,source_name):
+    try:
+        driver_new.get(link)
+        try:
+            driver_new.find_element_by_class_name('btn_disagree').click()
+        except:
+            print('hmm')
+        text = driver_new.find_element_by_class_name('mainArea').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
         l.append(text[i].get_attribute('textContent'))
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-    # print(text)
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')# print(text)
 
 def get_from_timesnow(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('artical-description').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
-
-
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
-def get_from_hindustantimes(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    time.sleep(5)
     try:
-        driver_new.find_element_by_class_name('btn_disagree').click()
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('artical-description').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
+
+
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
     except:
-        print('hmm')
-    text = driver_new.find_element_by_class_name('story-details').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        if(i!=(len(text)-1) and i!=(len(text)-2)):
-            print(text[i].get_attribute('textContent'))
-            l.append(text[i].get_attribute('textContent'))
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        print('umm')
+def get_from_hindustantimes(link,index,news_title,news_summary,source_name):
+    try:
+        driver_new.get(link)
+        time.sleep(5)
+        try:
+            driver_new.find_element_by_class_name('btn_disagree').click()
+        except:
+            print('hmm')
+        text = driver_new.find_element_by_class_name('story-details').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            if(i!=(len(text)-1) and i!=(len(text)-2)):
+                print(text[i].get_attribute('textContent'))
+                l.append(text[i].get_attribute('textContent'))
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_newindianexpress(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_id('storyContent').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_id('storyContent').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
 
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_guardian(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('content__article-body').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('content__standfirst').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
 
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_crictracker(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('meta-content').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        if(i!=(len(text)-1)):
-            print(text[i].get_attribute('textContent'))
-            l.append(text[i].get_attribute('textContent'))
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('meta-content').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            if(i!=(len(text)-1)):
+                print(text[i].get_attribute('textContent'))
+                l.append(text[i].get_attribute('textContent'))
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_indiacom(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('articleBody').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
-
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
-def get_from_dailymail(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_xpath('//*[@itemprop="articleBody"]').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
-
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
-def get_from_thenewsminute(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_xpath('//*[@itemprop="articleBody"]').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
-
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
-def get_from_ani(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_xpath('//*[@itemprop="articleBody"]').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
-
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
-def get_from_quint(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('story-article__cards').find_elements_by_css_selector('.story-article__content__element--text p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
-
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
-def get_from_bloombergquint(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('paywall').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
-
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
-def get_from_inc42(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('entry-content').find_elements_by_class_name('selectionShareable')
-    l = []
-    for i in range(len(text)):
-        if(text[i].get_attribute('textContent').find("Related Article:") == -1):
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('articleBody').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
             print(text[i].get_attribute('textContent'))
             l.append(text[i].get_attribute('textContent'))
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
+def get_from_dailymail(link,index,news_title,news_summary,source_name):
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_xpath('//*[@itemprop="articleBody"]').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
+
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
+def get_from_thenewsminute(link,index,news_title,news_summary,source_name):
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_xpath('//*[@itemprop="articleBody"]').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
+
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
+def get_from_ani(link,index,news_title,news_summary,source_name):
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_xpath('//*[@itemprop="articleBody"]').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
+
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
+def get_from_quint(link,index,news_title,news_summary,source_name):
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('story-article__cards').find_elements_by_css_selector('.story-article__content__element--text p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
+
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
+def get_from_bloombergquint(link,index,news_title,news_summary,source_name):
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('paywall').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
+
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
+def get_from_inc42(link,index,news_title,news_summary,source_name):
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('entry-content').find_elements_by_class_name('selectionShareable')
+        l = []
+        for i in range(len(text)):
+            if(text[i].get_attribute('textContent').find("Related Article:") == -1):
+                print(text[i].get_attribute('textContent'))
+                l.append(text[i].get_attribute('textContent'))
+
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 
 def get_from_reuters(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('StandardArticleBody_body').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
-
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('StandardArticleBody_body').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_financialexpress(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('leftstory').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
-
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
-def get_from_rt(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('article__text').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
-
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
-def get_from_freepressjournal(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('story-element-text').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
-
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
-def get_from_thewire(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('postComplete__description').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        if(text[i].get_attribute('textContent').find("Also read:") == -1):
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('leftstory').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
             print(text[i].get_attribute('textContent'))
             l.append(text[i].get_attribute('textContent'))
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
+def get_from_rt(link,index,news_title,news_summary,source_name):
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('article__text').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
+
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
+def get_from_freepressjournal(link,index,news_title,news_summary,source_name):
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('story-element-text').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
+
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
+def get_from_thewire(link,index,news_title,news_summary,source_name):
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('postComplete__description').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            if(text[i].get_attribute('textContent').find("Also read:") == -1):
+                print(text[i].get_attribute('textContent'))
+                l.append(text[i].get_attribute('textContent'))
+
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 
 def get_from_engadget(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_id('page_body').find_elements_by_css_selector('.article-text p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_id('page_body').find_elements_by_css_selector('.article-text p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_vogueindia(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('description').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('description').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_entrackr(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_xpath('//*[@data-widget_type="theme-post-content.default"]').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_xpath('//*[@data-widget_type="theme-post-content.default"]').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_pti(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_elements_by_class_name('fulstorytext')
-    l = []
-    for i in range(len(text)):
-        print(text[i].get_attribute('textContent'))
-        l.append(text[i].get_attribute('textContent'))
+    try:
+        driver_new.get(link)
+        text = driver_new.find_elements_by_class_name('fulstorytext')
+        l = []
+        for i in range(len(text)):
+            print(text[i].get_attribute('textContent'))
+            l.append(text[i].get_attribute('textContent'))
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_bollywoodhungama(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('entry-content').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('entry-content').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_pinkvilla(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_id('ct1').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_id('ct1').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_cricketcountry(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('cc-main-content').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('cc-main-content').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_whitehouse(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('page-content__content').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('page-content__content').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_yourstory(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('quill-content').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('quill-content').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_cricketaustralia(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('news-content').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('news-content').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_ftc(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('field-item').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('field-item').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_delhiplanet(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('story-detail').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('story-detail').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_phys(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('article-main').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('article-main').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_pri(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('node-story').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('node-story').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_bgr(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('article-content').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('article-content').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_pnas(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('pane-highwire-panel-tabs-container').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('pane-highwire-panel-tabs-container').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_purdue(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('maincontent').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('maincontent').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_techcircle(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_element_by_class_name('article-content').find_elements_by_css_selector('p')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_element_by_class_name('article-content').find_elements_by_css_selector('p')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 def get_from_spotboye(link,index,news_title,news_summary,source_name):
-    driver_new.get(link)
-    text = driver_new.find_elements_by_id('mvp-content-main')
-    l = []
-    for i in range(len(text)):
-        print(text[i].text)
-        l.append(text[i].text)
+    try:
+        driver_new.get(link)
+        text = driver_new.find_elements_by_id('mvp-content-main')
+        l = []
+        for i in range(len(text)):
+            print(text[i].text)
+            l.append(text[i].text)
 
-    article = ''.join(l)
-    add_to_csv(index,news_title,news_summary,source_name,article,link)
-
+        article = ''.join(l)
+        add_to_csv(index,news_title,news_summary,source_name,article,link)
+    except:
+        print('umm')
 
 
 def others():
@@ -571,11 +648,11 @@ def get_from_inshots():
 
 def get_from_csv():
     with open('documentsummaries.csv', 'r') as f:
-          reader = csv.reader(f)
+          reader = csv.reader(f,delimiter=',')
           your_list = list(reader)
           for i in range(len(your_list)):
               get_from_source(your_list[i][4],your_list[i][0],your_list[i][1],your_list[i][2],your_list[i][3])
-    print(your_list)
+    # print(your_list)
 
 
 get_from_csv()
